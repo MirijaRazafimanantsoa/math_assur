@@ -1,0 +1,371 @@
+body {
+    font-family: Arial, sans-serif; /* Set a clean sans-serif font */
+    background: linear-gradient(90deg, #fed7a5, #9e6752); /* Gradient background */
+    color: #343a40; /* Dark text color for contrast */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Padding around the content */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+
+
+/* Adding some global link styles */
+a {
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between brand and links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for spacing */
+    background: linear-gradient(90deg, #2d4354, #20212b); /* Gradient background */
+    ; /* Dark background with opacity */
+    color: white; /* Text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Soft shadow for depth */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Increase font size for brand */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.navbar-links {
+    display: flex; /* Use flexbox for links alignment */
+}
+
+.nav-link {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around links */
+    transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Dashboard Title Styles */
+.dashboard-title {
+    margin: 20px 0; /* Margin for spacing */
+    font-size: 1.5rem; /* Increase font size for better emphasis */
+    color: #fff; /* Change text color to white for contrast */
+    text-align: center; /* Center the title */
+    background: linear-gradient(90deg, #9e6752, #534145); /* Gradient background */
+    
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 1px; /* Add spacing between letters */
+}
+
+/* Session info styling */
+.session-info {
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.session-info strong {
+    color: #2d4354; /* Dark text for emphasis */
+}
+
+
+/* Dashboard card styling */
+.card-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Space out the cards evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 1; /* Allow cards to grow and fill available space */ 
+}
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 1; /* Allow cards to grow and fill available space */ 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.primary {
+    background: linear-gradient(135deg, #73766a, #2d4354);
+}
+
+.success {
+    background: linear-gradient(135deg, #534145, #20212b);
+}
+
+.danger {
+    background: linear-gradient(135deg, #fed7a5, #9e6752);
+}
+
+.historique {
+    background: linear-gradient(135deg, #273d4e, #2d2f3f); /* Soft coral to peach gradient */
+}
+
+.card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.card h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.list-group {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.list-group-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for list items */
+    margin: 5px 0; /* Space between items */
+    padding: 10px; /* Padding for items */
+    border-radius: 5px; /* Rounded corners for items */
+    color: rgb(250, 250, 250); /* Text color for items */
+}
+
+
+/* Action buttons */
+.actions {
+    display: flex;                     /* Use flexbox for alignment */
+    justify-content: space-between;    /* Distribute space between buttons */
+    align-items: center;               /* Center align items vertically */
+    gap: 10px;                         /* Add some space between buttons */
+    margin-top: 20px;                  /* Add margin on top if needed */
+}
+
+.primary-button,
+.success-button,
+.secondary-button {
+    padding: 10px 15px;               /* Add padding to buttons */
+    font-size: 16px;                  /* Adjust font size */
+    border: none;                     /* Remove border */
+    border-radius: 5px;              /* Round the corners */
+    cursor: pointer;                  /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+    font-weight: bold;                /* Bold text for better visibility */
+}
+
+.primary-button {
+    background: linear-gradient(135deg, #73766a, #2d372f); /* Gradient for primary button */
+    color: white;                       /* Text color */
+}
+
+.success-button {
+    background: linear-gradient(135deg, #73766a, #2d372f); /* Gradient for primary button */
+    color: white;                       /* Text color */
+}
+
+.secondary-button {
+    background: linear-gradient(135deg, #73766a, #2d372f); /* Gradient for primary button */
+    color: white;                       /* Text color */
+}
+
+/* Optional: Add hover effects */
+.primary-button:hover,
+.success-button:hover,
+.secondary-button:hover {
+    opacity: 0.9;                       /* Slightly change opacity on hover */
+    transform: scale(1.05);             /* Scale up on hover for a nice effect */
+}
+
+
+/* Modal Styles */
+.modal {
+    display: flex;                          /* Use flexbox to center the modal */
+    position: fixed;                       /* Fixed position */
+    z-index: 1000;                        /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;                          /* Full width */
+    height: 100%;                         /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker background with transparency */
+    align-items: center;                  /* Center vertically */
+    justify-content: center;              /* Center horizontally */
+}
+
+.modal-content {
+    background-color: #f9f9f9;            /* Light gray background for modal content */
+    padding: 20px;
+    border: 1px solid #ccc;               /* Light border for contrast */
+    border-radius: 8px;                   /* Rounded corners */
+    width: 90%;                          /* Responsive width */
+    max-width: 400px;                     /* Max width for modal */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for modal */
+    display: flex;                        /* Use flexbox for the content */
+    flex-direction: column;               /* Arrange children in a column */
+}
+
+/* Close Button Styles */
+.close {
+    color: #555;                          /* Soft gray color for the close button */
+    float: right;                         /* Align close button to the right */
+    font-size: 28px;                     /* Close button size */
+    font-weight: bold;                    /* Bold close button */
+    cursor: pointer;                      /* Pointer cursor on hover */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;                         /* Change color to black on hover */
+    text-decoration: none;                /* No underline */
+}
+
+/* Input and Select Styles */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;                         /* Full width */
+    padding: 10px;                      /* Padding */
+    margin: 5px -12px 15px;                 /* Margin for spacing */
+    border: 1px solid #aaa;              /* Soft gray border */
+    border-radius: 4px;                 /* Rounded corners */
+    background-color: #ffffff;          /* White input background color */
+    color: #333;                        /* Dark text color */
+}
+
+/* Button Styles inside Modal */
+button[type="submit"],
+button[type="button"] {
+    padding: 10px 15px;                 /* Padding for buttons */
+    margin-top: 10px;                   /* Space above buttons */
+    border: none;                        /* No border */
+    border-radius: 5px;                 /* Rounded corners */
+    cursor: pointer;                     /* Pointer cursor on hover */
+    width: 100%;                         /* Full width for buttons */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;          /* Green for submit */
+    color: white;                       /* White text */
+}
+
+button[type="button"] {
+    background-color: #f44336;          /* Red for cancel */
+    color: white;                       /* White text */
+}
+
+/* Optional: Add hover effects for buttons */
+button[type="submit"]:hover {
+    background-color: #45a049;          /* Darker green on hover */
+}
+
+button[type="button"]:hover {
+    background-color: #e53935;          /* Darker red on hover */
+}
+
+footer{
+    width:100%;
+    border-radius: 10px;
+}
+
+.footer-container {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #1a252f;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.logout-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

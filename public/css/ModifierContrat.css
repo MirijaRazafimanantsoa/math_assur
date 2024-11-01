@@ -1,0 +1,65 @@
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #fed7a5, #9e6752); /* Gradient background */
+}
+
+
+/* Basic styling for the form */
+.contrat-form {
+    max-width: 600px; /* Adjust width as necessary */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #2d4354, #20212b); /* Gradient background */
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Style for labels */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Style for input fields */
+.form-control {
+    width: 100%; /* Full width for inputs */
+    padding: 8px; /* Padding inside the inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Style for the submit button */
+.btn {
+    padding: 10px 15px; /* Padding inside the button */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+h1 {
+    font-size: 2rem; /* Set a suitable font size */
+    text-align: center; /* Center the heading */
+    color: #ffffff; /* Text color */
+    margin: 20px 0; /* Space above and below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+    font-weight: bold; /* Make the text bold */
+}
